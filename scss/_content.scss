@@ -1,0 +1,169 @@
+.main{
+	line-height: 1.6em;
+}
+.columns{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__item{
+		width: 48%;
+	}
+}
+.goal{
+  padding: 90px 0 0 0;
+  h2{
+  	text-align: center;
+  	padding-bottom: 60px;
+  }
+  &__list{
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+  	padding: 0 14%;
+  }
+  &__item{
+  	width: 47%;
+  	display: flex;
+  	justify-content: flex-start;
+  	margin-bottom: 60px;
+  }
+  &__num{
+  	font-family: $numFont;
+  	@include fsize(72px);
+  	flex-basis: 80px;
+  	flex-shrink: 0;
+  	color: $numColor;
+  	text-align: center;
+  	margin-top: 40px;
+  }
+  &__info{
+  	flex-grow: 2;
+  	padding-right: 5%;
+  }
+  &__title{
+  	@include fsize(18px);
+  	padding-bottom: 8px;
+  }
+  &__text{
+  	line-height: 1.6em;
+  }
+}
+.journal-functions{
+	padding: 67px 0 85px 0;
+	.columns__img{
+		img{
+			width: 90%;
+			margin-left: -60px;
+		}
+	}
+	&__info{
+		padding: 74px 14% 0 6.5%;
+	}
+	&__list{
+		li{
+			margin-bottom: 30px;
+			line-height: 1.6em;
+		}
+	}
+}
+.app-functions{
+	padding: 110px 8.5% 85px 8.5%;
+	.columns__img{
+		padding-left: 90px;
+	}
+	&__info{
+		padding-top: 40px;
+		padding-left: 14%;
+	}
+	&__list{
+		padding-right: 2%;
+		li{
+			margin-bottom: 30px;
+
+		}
+	}
+}
+.usage{
+	padding-top: 95px;
+	padding-bottom: 130px;
+	&__info{
+		padding-right: 10%;
+		padding-top: 20px;
+	}
+	.columns__item{
+		padding-left: 1%;
+		width: 50%;
+	}
+	.columns__img{
+		padding-left: 3%;
+	}
+}
+.join{
+ 	background-color: $toneColor;
+ 	color: $inverseTextColor;
+ 	.content{
+		padding-top: 115px;
+		padding-bottom: 95px;
+ 	}
+	.columns__item{
+		padding-right: 5%;
+	}
+	&__list{
+		padding-top: 16px;
+	}
+	&__list-item{
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 40px;
+	}
+	&__num{
+	  	flex-basis: 50px;
+	  	flex-shrink: 0;
+	  	font-family: $numFont;
+	  	@include fsize(72px);
+	  	color: $numColor;
+	  	display: block;
+	  	padding-top: 20px;
+	}
+	&__text{
+		flex-grow: 2;
+	}
+	&__phone{
+		font-family: $numFont;
+		@include fsize(36px);
+		padding-top: 20px;
+		white-space: nowrap;
+	}
+}
+.feedback{
+	padding-top: 125px;
+	padding-bottom: 115px;
+	.columns{
+		align-items: flex-start;
+		&__item{
+			width: 50%;
+		}
+		&__img{
+			padding-top: 20px;
+			padding-left: 20px;
+		}
+	}
+	&__form{
+		padding-right: 10%;
+		padding-left: 10px;
+		text-align: center;
+		form{
+			padding-right: 17%;
+			padding-top: 14px;
+			.btn{
+				float: right;
+			}
+		}
+		h2{
+			text-align: left;
+		}
+	}
+}
+.icons{
+	font-family: $iconFont;
+}

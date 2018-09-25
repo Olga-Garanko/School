@@ -1,0 +1,61 @@
+.footer{
+  background-color: $toneColor;
+  color: $inverseTextColor;
+  padding: 40px 0;
+  @include fsize(14px);
+  letter-spacing: 0.7px;
+  a{
+    color: $inverseTextColor;
+  }
+  &__menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    li{
+      padding: 0 0 0 48px;
+      & a{
+        display: block;
+        text-decoration: none;
+        padding: 10px 5px 7px;
+        position: relative;
+        &:after{
+          position: absolute;
+          content: '';
+          height: 8px;
+          width: 0;
+          bottom: 0;
+          left: 0;
+          background: url(img/line.png) repeat-x left center;
+          transition: all .2s ease-in;
+        }
+      }
+      & a:hover, &.active a  {
+          text-decoration: none; 
+          &:after{
+            width: 100%;
+          }
+      }
+    }
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+  }
+  &__copyright{
+    flex-grow: 2;
+    padding-bottom: 7px;
+  }
+  &__development{
+    padding-left: 50px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+  &__menu{
+    display: flex;
+    justify-content: flex-end;
+  }
+}
